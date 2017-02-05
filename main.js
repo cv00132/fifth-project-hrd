@@ -32,3 +32,15 @@ items.forEach(
 );
 
 answerBox3.innerHTML += isBrit;
+
+//4. Display a list of all items who are made of wood.
+
+var answerBox4 = document.getElementById("answer4");
+
+var wooden = items.filter(
+  function (x) {
+    return x.materials.include("wood")
+  }
+).forEach(
+  function (x)
+)
