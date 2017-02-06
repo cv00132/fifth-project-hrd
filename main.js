@@ -44,7 +44,9 @@ items.filter(mulMaterials).forEach(list);
 
 //6. How many items were made by their sellers?
 var answerBox6 = $("answer6");
+var newArray = 0;
 
-var madeSellers = function (x) { return}
+var madeSellers = function (x) { return newArray += x.who_made.includes("i_did")};
+var homeMade = function (x) {return answerBox6.innerHTML = "<p>" + newArray + " were made by their sellers." + "</p>"};
 
-items.reduce()
+items.filter(madeSellers).forEach(homeMade);
